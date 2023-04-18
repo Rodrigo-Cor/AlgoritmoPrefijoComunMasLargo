@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/fontawesome-free-5.15.4-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-5.15.4-web/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-5.15.4-web/css/solid.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/sweetalert2/dist/sweetalert2.css" />
+    <script src="./assets/anime-master/lib/anime.min.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Solución DyV</title>
+</head>
+
+<body>
+
+    <div class="hero_area">
+
+        <header class="header_section">
+            <div class="header_Top">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container">
+                        <a href="#" class="navbar-brand"><span><i class="bi bi-code-square"></i> Longest Common
+                                Prefix</span></a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">Home</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+    </div>
+
+    <section class="product_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>LCP mediante Divide y Venceras</h2>
+                <p>Ingrese cuatro cadenas y de click al boton para inicar la animacion.</p>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="container" id="Oculto">
+            <form id="recepcion">
+                <div class="row justify-content-center" id="Cadenas">
+                    <div class="form-group col-4 col-lg-3 col-xl-2 mt-4">
+                        <label class="form-label">S1</label>
+                        <input class="form-control" autoComplete="off" id="D1" required type="text"
+                            pattern="^[a-z]{1,12}$" placeholder="geekforgeeks" />
+                    </div>
+                    <div class="form-group col-4 col-lg-3 col-xl-2 mt-4">
+                        <label class="form-label">S2</label>
+                        <input class="form-control" autoComplete="off" id="D2" required type="text"
+                            pattern="^[a-z]{1,12}$" placeholder="geekforgeeks" />
+                    </div>
+                    <div class="form-group col-4 col-lg-3 col-xl-2 mt-4">
+                        <label class="form-label">S3</label>
+                        <input class="form-control" autoComplete="off" id="D3" required type="text"
+                            pattern="^[a-z]{1,12}$" placeholder="geekforgeeks" />
+                    </div>
+                    <div class="form-group col-4 col-lg-3 col-xl-2 mt-4">
+                        <label class="form-label">S4</label>
+                        <input class="form-control" autoComplete="off" id="D4" required type="text"
+                            pattern="^[a-z]{1,12}$" placeholder="geekforgeeks" />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <button type="submit" class="btn btn-primary ps-5 pe-5 mt-4" id="numCadenas"
+                                name="Listo">Listo</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container mt-5">
+            <ul class="list-inline" id="Final"></ul>
+            <button type="button" class="btn btn-primary d-none" id="DyV">
+                Animación
+            </button>
+        </div>
+
+        <div class="mt-3" id="animacionDyV">
+            <div id="divide"></div>
+        </div>
+
+        <div>
+            <div class="d-flex justify-content-between">
+                <div class="container">
+                    <div class="row">
+                        <div id="izquierdaSimple1" class="col-6"></div>
+                        <div id="izquierdaSimple2" class="col-6"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div id="derechaSimple1" class="col-6"></div>
+                        <div id="derechaSimple2" class="col-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex justify-content-center">
+                        <div id="recursionIzquierda">
+                            <div class="text-break mt-3" id="funIzquierda"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex justify-content-center">
+                        <div id="recursionDerecha">
+                            <div class="text-break mt-3" id="funDerecha"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="d-flex justify-content-center">
+                <div id="recursionFinal">
+                    <div class="text-break mt-1" id="funFinal"></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="comparacionesFinales" class="mb-2 mt-3"></div>
+            </div>
+        </div>
+    </main>
+
+    <section class="info_section">
+        <div class="container">
+            <h5>Team Generic Name:</h5>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <img src="./images/1.jpeg">
+                        <div class="team-content">
+                            <h3 class="title">Adrian</h3>
+                            <span class="post">Cruz Lopez</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <img src="./images/2.jpeg">
+                        <div class="team-content">
+                            <h3 class="title">Joksan Jared</h3>
+                            <span class="post">Estrella Duran</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <img src="./images/3.jpeg">
+                        <div class="team-content">
+                            <h3 class="title">Rodrigo</h3>
+                            <span class="post">Corona Rivera</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <img src="./images/4.jpeg">
+                        <div class="team-content">
+                            <h3 class="title">David Alberto</h3>
+                            <span class="post">Diaz Morales</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_section">
+        <div class="container">
+            <p> &copy; 2021 Todos Los Derechos Reservados Por <a href="#">Escuela Superior de Computo</a></p>
+        </div>
+    </footer>
+
+    <script defer src="./assets/fontawesome-free-5.15.4-web/js/brands.js"></script>
+    <script defer src="./assets/fontawesome-free-5.15.4-web/js/solid.js"></script>
+    <script defer src="./assets/fontawesome-free-5.15.4-web/js/fontawesome.js"></script>
+    <script src="./assets/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./js/solDyV/main.js"></script>
+</body>
+
+</html>

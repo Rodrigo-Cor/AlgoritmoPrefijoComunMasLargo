@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>LCP</title>
+  <!-- Coding With Nick -->
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- font awesome style -->
+  <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+  <!-- Custom styles -->
+  <link href="./styles/menu.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <header class="header_section">
+      <div class="header_Top">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a href="#" class="navbar-brand"><span><i class="bi bi-code-square"></i> Longest Common Prefix</span></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="slider_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <h1>Que es un prefijo?</h1>
+              <p>Es toda aquella cadena que sale de ir eliminando 0 ó mas caracteres del final al inicio.</p>
+              <a href="https://definicion.de/prefijo/">Conoce Mas</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img class="img-fluid" src="./images/vocales-dobles.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="product_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Descripcion del Problema</h2>
+        <p>Dado un arreglo de cadenas S, escriba un programa para encontrar la cadena de prefijo comun mas larga, la
+          cual es el prefijo de todas las cdenas del arreglo.</p>
+      </div>
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 ml-auto">
+          <div class="detail-box pr-md-3">
+            <div class="heading_container">
+              <h2>Notas de problema</h2>
+            </div>
+            <p>Todas las enrtadas estan en letras minusculas de la a-z.</p>
+            <p>Si no hay prefijo comun devuelve -1.</p>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img class="img-fluid" src="./images/warn.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 ml-auto">
+          <div class="detail-box pr-md-3">
+            <div class="heading_container">
+              <h2>Ejemplos</h2>
+            </div>
+            <div class="container">
+              <img class="img-fluid" src="./images/Ej3.PNG" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="container">
+            <img class="img-fluid" src="./images/Ej1.PNG" alt="">
+          </div>
+          <div class="container">
+            <img class="img-fluid" src="./images/Ej2.PNG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Soluciones</h2>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="box">
+            <div class="img-box">
+              <a href="#FB">
+                <img src="./images/Bf.png" alt="">
+              </a>
+            </div>
+            <div class="detail_box">
+              <h5>Fuerza Bruta</h5>
+              <p>Prueba todas las posibles combinaciones, recorrer todos los caminos hasta dar con la situación que es
+                igual que la solución.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="box">
+            <div class="img-box">
+              <a href="#DV">
+                <img class="img-fluid" src="./images/DyV.png" alt="">
+              </a>
+            </div>
+            <div class="detail_box">
+              <h5>Divide y Venceras</h5>
+              <p>Resuelve recursivamente un problema dividiéndolo en dos o más subproblemas de igual tipo o similar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="FB" class="slider_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h1>Solucion de Fuerza Bruta</h1>
+            <p>En este algoritmo, se supone que el prefijo es la primera cadena y a partir de ahi se van haciendo transformaciones con las demas cadenas reduciendo desde el final hasta el inicio hasta llegar hasta la cadena vacia que significaria que no existe un prefijo comun mas largo.</p>
+            <p>Asi se ira comparando el prefijo contra todas las cadenas que existen en el arreglo y se ira reduciendo la variable del prefijo</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+
+            <div
+              style="background: #f0f3f3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+              <pre style="margin: 0; line-height: 125%"><span style="color: #006699; font-weight: bold">const</span> longestCommonPrefix <span style="color: #555555">=</span> (cadenas, tam) <span style="color: #555555">=&gt;</span> {
+  <span style="color: #006699; font-weight: bold">if</span> (tam <span style="color: #555555">===</span> <span style="color: #FF6600">0</span>) {
+      <span style="color: #006699; font-weight: bold">return</span> <span style="color: #CC3300">&quot;-1&quot;</span>;
+  }
+  <span style="color: #006699; font-weight: bold">let</span> prefijo <span style="color: #555555">=</span> cadenas[<span style="color: #FF6600">0</span>];
+
+  <span style="color: #006699; font-weight: bold">for</span> (<span style="color: #006699; font-weight: bold">let</span> i <span style="color: #555555">=</span> <span style="color: #FF6600">1</span>; i <span style="color: #555555">&lt;</span> cadenas.length; i<span style="color: #555555">++</span>) {
+      <span style="color: #006699; font-weight: bold">while</span> (cadenas[i].indexOf(prefijo) <span style="color: #555555">!=</span> <span style="color: #FF6600">0</span>) {
+          prefijo <span style="color: #555555">=</span> prefijo.substring(<span style="color: #FF6600">0</span>, (prefijo.length) <span style="color: #555555">-</span> <span style="color: #FF6600">1</span>)
+      }
+      <span style="color: #006699; font-weight: bold">if</span> (prefijo.length <span style="color: #555555">===</span> <span style="color: #FF6600">0</span>) {
+          <span style="color: #006699; font-weight: bold">return</span> <span style="color: #CC3300">&quot;-1&quot;</span>;
+      }
+  }
+  <span style="color: #006699; font-weight: bold">return</span> prefijo;
+  };
+  </pre>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-boxs">
+            <img class="img-fluid" src="./images/CotaSB.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-boxc">
+            <h1>Analisis de Cota</h1>
+            <p>Tomando 𝒔 como la suma de longuitudes de todas las cadenas.</p>
+            <p>Se obtuvo una cota 𝑶(𝒔𝒏), ya que se tienen tanto asignaciones como comparaciones, las cuales tienen
+              una cota 𝑶(𝟏). Sin embargo, se tienen dos ciclos, el ciclo “for” cuya
+              cota es 𝑶(𝒏), este se ejecutará dependiendo del número de cadenas que se necesiten comparar para
+              determinar su LCP. Y dentro del “for”, se tiene un ciclo “while” cuya cota
+              es 𝑶(𝒔), debido a que se realizara en el peor de los casos la sumatoria de las longitudes de todas las cadenas.
+            </p>
+            <h5>Cota del algoritmo: 𝑶(𝒔𝒏)</h5>
+            <a href="./solucionBruta.html">Ver Animacion</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="DV" class="slider_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h1>Solucion Divide y Venceras</h1>
+            <p>Para esta solucion lo que hacemos es separar las cadenas que nos dieron en pares y comparar cada uno de
+              los caracteres de estos pares para obtener su prefijo mas largo,
+              una vez hecho esto compararemos los pares de los prefijos obtenidos de modo a que tengamos un prefijo
+              comun de estos.</p>
+            <p>Usando "commonprefix" separaremos las cadenas en dos str1 y str2 para despues enviarsela a
+              "commonprefixutil" para obtener el prefijo comun mas largo de ambas e ir reduciendo el rango del prefijo</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+
+            <div
+              style="background: #f0f3f3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+              <pre style="margin: 0; line-height: 125%"><span style="color: #006699; font-weight: bold">const</span> commonPrefixUtil <span style="color: #555555">=</span> (str1, str2) <span style="color: #555555">=&gt;</span> {
+    <span style="color: #006699; font-weight: bold">let</span> result <span style="color: #555555">=</span> <span style="color: #CC3300">&quot;&quot;</span>;
+    <span style="color: #006699; font-weight: bold">let</span> n1 <span style="color: #555555">=</span> str1.length, n2 <span style="color: #555555">=</span> str2.length;
+    
+    <span style="color: #006699; font-weight: bold">for</span> (<span style="color: #006699; font-weight: bold">let</span> i <span style="color: #555555">=</span> <span style="color: #FF6600">0</span>, j <span style="color: #555555">=</span> <span style="color: #FF6600">0</span>; i <span style="color: #555555">&lt;=</span> n1 <span style="color: #555555">-</span> <span style="color: #FF6600">1</span> <span style="color: #555555">&amp;&amp;</span> j <span style="color: #555555">&lt;=</span> n2 <span style="color: #555555">-</span> <span style="color: #FF6600">1</span>; i<span style="color: #555555">++</span>, j<span style="color: #555555">++</span>) {
+        resultado<span style="color: #555555">++</span>;
+        <span style="color: #006699; font-weight: bold">if</span> (str1[i] <span style="color: #555555">!=</span> str2[j]) {
+            <span style="color: #006699; font-weight: bold">break</span>;
+        }
+        result <span style="color: #555555">+=</span> str1[i];
+    }
+    <span style="color: #006699; font-weight: bold">return</span> (result);
+}
+
+<span style="color: #006699; font-weight: bold">const</span> commonPrefix <span style="color: #555555">=</span> (arr, low, high) <span style="color: #555555">=&gt;</span> {
+    
+    <span style="color: #006699; font-weight: bold">if</span> (low <span style="color: #555555">==</span> high) {
+        <span style="color: #006699; font-weight: bold">return</span> (arr[low]);
+    }
+
+
+    <span style="color: #006699; font-weight: bold">if</span> (high <span style="color: #555555">&gt;</span> low) {
+
+        <span style="color: #006699; font-weight: bold">let</span> mid <span style="color: #555555">=</span> low <span style="color: #555555">+</span> <span style="color: #336666">Math</span>.floor((high <span style="color: #555555">-</span> low) <span style="color: #555555">/</span> <span style="color: #FF6600">2</span>);
+        <span style="color: #006699; font-weight: bold">let</span> str1 <span style="color: #555555">=</span> commonPrefix(arr, low, mid);
+        <span style="color: #006699; font-weight: bold">let</span> str2 <span style="color: #555555">=</span> commonPrefix(arr, mid <span style="color: #555555">+</span> <span style="color: #FF6600">1</span>, high);
+        <span style="color: #006699; font-weight: bold">return</span> (commonPrefixUtil(str1, str2));
+    }
+    <span style="color: #006699; font-weight: bold">return</span> <span style="color: #006699; font-weight: bold">null</span>;
+}
+</pre>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-boxd">
+            <img class="img-fluid" src="./images/CotaDV.PNG" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-boxc">
+            <h1>Analisis de Cota</h1>
+            <p>Para la función commonPrefix se tomaron en cuenta todas las operaciones
+              basicas (aritmeticas, comparaciones y los return).
+            </p>
+            <p>Tomando 𝒔 como la longitud de la cadena mas larga.</p>
+            <p>Para commonPrefix: &nbsp; 𝑇(𝑛)=1+1+1+1+3+1+𝑇(𝑛∕2)+1+1+𝑇(𝑛∕2)+𝑂(𝑠)+1
+              <br>
+              𝑻(𝒏)=𝟏𝟏+𝟐𝑻(𝒏∕𝟐)+𝑶(𝒔)
+              <br>
+              Aplicando el teorema maestro para resolver la ecuación de recurrencia se tiene que:
+              <br>
+              𝑻(𝒏)=𝟐𝑻(𝒏∕𝟐)+(𝑶(𝒔)+𝟏𝟏) &nbsp; 𝒇(𝒏)=𝑶(𝒔)+𝟏𝟏∈𝑶(𝟏) &nbsp; a = 2, b = 2
+              <br>
+              Para este caso se tiene el caso 1 del teorema maestro
+              <br>
+              𝒇(𝒏)=𝑶(𝒏<sup>𝐥𝐨𝐠<sub>𝟐</sub>𝟐-𝟏</sup>)=𝑶(𝒏<sup>𝟎</sup>)=𝑶(𝟏) &nbsp; Por lo tanto:
+              <br>
+              𝑻(𝒏)=𝑶(𝒏<sup>𝐥𝐨𝐠<sub>𝟐</sub>𝟐</sup>)=𝑶(𝒏)
+              <br>
+              Pero se tiene que considerar la parte de que en el peor caso la función que saca el prefijo de dos cadenas
+              se haría S veces, se le agrega esa constante,
+              ya que, es parte de la complejidad del algoritmo.
+              <br>
+              𝑻(𝒏)= 𝑶(𝒔𝒏)
+            </p>
+            <h5>Cota del algoritmo: 𝑶(𝒔𝒏)</h5>
+            <h5>Cota del caso base: 𝑶(𝟏)</h5>
+            <a href="./solucionDyV.html">Ver Animacion</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info_section">
+    <div class="container">
+      <h5>Team Generic Name:</h5>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <img class="img-fluid" src="./images/1.jpeg">
+            <div class="team-content">
+              <h3 class="title">Adrian</h3>
+              <span class="post">Cruz Lopez</span>
+              <ul class="social">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <img class="img-fluid" src="./images/2.jpeg">
+            <div class="team-content">
+              <h3 class="title">Joksan Jared</h3>
+              <span class="post">Estrella Duran</span>
+              <ul class="social">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <img class="img-fluid" src="./images/3.jpeg">
+            <div class="team-content">
+              <h3 class="title">Rodrigo</h3>
+              <span class="post">Corona Rivera</span>
+              <ul class="social">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <img class="img-fluid" src="./images/4.jpeg">
+            <div class="team-content">
+              <h3 class="title">David Alberto</h3>
+              <span class="post">Diaz Morales</span>
+              <ul class="social">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section">
+    <div class="container">
+      <p> &copy; 2021 Todos Los Derechos Reservados Por <a href="#">Escuela Superior de Computo</a></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
